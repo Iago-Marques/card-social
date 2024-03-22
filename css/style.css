@@ -1,0 +1,93 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html{
+   font-size: 62.5%;
+   font-family: Inter;
+}
+
+@font-face {
+   font-family: Inter;
+   src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format("truetype");
+}
+
+:root{
+   --cor-background: #141414;
+   --cor-card: #1f1f1f;
+   --cor-links: #333333;
+   --cor-h1: #ffffff;
+   --cor-p-active:  #c5f82a;
+}
+
+body{
+   height: 100vh;
+   background-color: var(--cor-background);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.card-social{
+   background-color: var(--cor-card);
+   width: 40rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-bottom: 2rem;
+   border-radius: 10px;
+}
+
+.foto{
+   width: 10rem;
+   border-radius: 50%;
+   padding: 4rem 0 2.5rem;
+}
+
+.card-social h1{
+   color: var(--cor-h1);
+   font-weight: 500;
+   font-size: 2.8rem;
+}
+
+.endereco{
+   color: var(--cor-p-active);
+   font-size: 1.6rem;
+   font-weight: 600;
+   padding: 1rem 0 2.5rem;
+}
+
+.descricao{
+   color: var(--cor-h1);
+   font-size: 1.6rem;
+   font-weight: 200;
+   padding-bottom: 2.5rem;
+}
+
+.links{
+   list-style-type: none;
+   width: 80%;
+}
+
+.links .social a{
+   background-color: var(--cor-links);
+   width: 100%;
+   display: block;
+   text-align: center;
+   margin: 0 0 1.6rem;
+   padding: 1.5rem;
+   border-radius: 10px;
+   font-size: 1.6rem;
+   text-decoration: none;
+   color: var(--cor-h1);
+   font-weight: 600;
+}
+
+.links .social a:hover{
+   background-color: var(--cor-p-active);
+   color: var(--cor-card);
+   font-weight: 700;
+   transition: 0.5s;
+}
